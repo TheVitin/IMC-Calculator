@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta chaset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="IMC.css">  
+    <title>IMC calculator</title>
+</head>
+
+<center>
+    <body>
+        <h1 class="titulo">Calculadora de IMC</h1>
+        <br>
+    <div>
+        <h3 class="texto" id="descExercicio">
+            Resultado abaixo de 17 - Muito abaixo do peso;<br><br>  
+            Resultado entre 17 e 18,49 - Abaixo do peso;<br><br>  
+            Resultado entre 18,5 e 24,99 - Peso ideal;<br><br>  
+            Resultado entre 25 e 29,99 - Sobrepeso;<br><br>  
+            Resultado entre 30 e 34,9 - Obesidade grau I;<br><br>  
+            Resultado entre 35 e 39,9 - Obesidade grau II (severa);<br><br>  
+            Resultado acima de 40 - Obesidade grau III (morbida):<br>    
+        </h3>
+    </div>
+    <br>
+
+    <form onsubmit="return calcular(event)">
+        <label class="sub">Digite seu peso:</label><br><br>
+        <input class="input" type="text" nome="peso" id="peso" placeholder="Exemplo: 65" /><br><br>
+
+        <label class="sub">Digite sua altura</label><br><br>
+        <input class="input" type="text" nome="altura" id="altura" placeholder="Exemplo: 1.90"/><br><br>
+
+        <input class="botao" type="submit" value="Calcular IMC">
+    </form>
+    <div class="resultado" id="resultado"></div>
+    
+
+    <script src="IMC.js"></script>
+    <br>
+
+
+    <footer class="rodape">
+        Todos os direitos reservados@2023
+    </footer>
+    </body>
+</center>
+</html>
